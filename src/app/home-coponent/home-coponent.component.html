@@ -1,0 +1,46 @@
+<p>  home works!</p>
+<ul class="list-group">
+  <li class="list-group-item active">Get json string data from File </li>
+  <li class="list-group-item" *ngFor="let data1 of results">
+    {{ data1 }}
+  </li>
+</ul>
+
+<p>  home works!</p>
+ 
+<ul class="list-group">
+  <li class="list-group-item active">Get json string data from File </li>
+  <li class="list-group-item" *ngFor="let data2 of results2">
+    {{ data2.id }}
+    {{ data2.name }}
+    ราคา {{ data2.price }} บาท
+  </li>
+</ul>
+
+
+<p>  home works!</p>
+ 
+<ul class="list-group">
+  <li class="list-group-item active">Get json string data from File </li>
+  <li class="list-group-item" *ngFor="let data3 of results3">
+    {{ data3.id }}
+    {{ data3.name }}
+    ราคา {{ data3.price }} บาท
+  </li>
+</ul>
+<pre>
+  {{ jsonData | json }}
+</pre>
+
+<p>  home works!</p>
+ 
+<ul class="list-group">
+  <li class="list-group-item active">Get json string data from File </li>
+  <li class="list-group-item" *ngFor="let data4 of results4">
+    {{ data4.id }} <br>
+    {{ data4.name }} <br>
+    {{ data4.username }} <br>
+    {{ data4.email }} <br>
+    {{ data4.address.street }} <br>
+  </li>
+</ul>

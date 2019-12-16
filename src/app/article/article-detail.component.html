@@ -1,0 +1,28 @@
+<p>article-detail works!</p>
+<table class="table table-sm">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col" colspan="2">View Detail</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let result of results">
+    <tr>
+      <th class="table-secondary text-right" width="100" scope="row">userId &nbsp;</th>
+      <td> {{ result.userId }} </td>
+    </tr>
+    <tr>
+      <th class="table-secondary text-right" scope="row">ID &nbsp;</th>
+      <td> {{ result.id }} </td>
+    </tr>
+    <tr>
+      <th class="table-secondary text-right" scope="row">Title &nbsp;</th>
+      <td> {{ result.title }} </td>
+    </tr>
+    <tr>
+      <th class="table-secondary text-right" scope="row">Detail &nbsp;</th>
+      <td> {{ result.body }} </td>
+    </tr>
+  </tbody>
+</table>
+<button [routerLink]="['/article',{id:postID}]" 
+[queryParams]="{page: activePage}" class="btn btn-sm btn-warning"> Back</button>
